@@ -1,1 +1,2 @@
-sms.provider = aliyun
+sms:
+  provider: aliyun
