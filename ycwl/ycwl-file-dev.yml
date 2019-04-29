@@ -1,0 +1,18 @@
+server:
+  port: 8901
+
+eureka:
+  instance:
+    hostname: ${spring.application.name}
+  client:
+    service-url:
+      defaultZone: http://localhost:20881/eureka/
+
+file:
+  store:
+    type: qiniu
+
+qiniu:
+  accessKey: 7JjEqYC7MVNNZBthhBAlJUClmRh3JCZr5WDrwLhV
+  secretKey: jVNICu_l7LAWbPexfaIKWZd6XEKdvnaBNFZ2Y9ud
+  bucketName: ailepet
