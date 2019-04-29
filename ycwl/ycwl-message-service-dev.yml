@@ -5,7 +5,7 @@ spring:
   application:
     name: ycwl-message-service
   profiles:
-    active: @env@
+    active: '@env@'
 
 eureka:
   instance:
