@@ -1,6 +1,12 @@
 server:
   port: 8902
 
+spring:
+  application:
+    name: ycwl-message-service
+  profiles:
+    active: @env@
+
 eureka:
   instance:
     hostname: ${spring.application.name}
