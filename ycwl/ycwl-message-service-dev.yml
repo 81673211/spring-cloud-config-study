@@ -1,10 +1,6 @@
 server:
   port: 8902
 
-spring:
-  profiles:
-    active: '@env@'
-
 eureka:
   instance:
     hostname: ${spring.application.name}
