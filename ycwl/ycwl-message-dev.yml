@@ -6,7 +6,7 @@ eureka:
     hostname: ${spring.application.name}
   client:
     service-url:
-      defaultZone: http://www.glove1573.cn:20881/eureka/
+      defaultZone: https://www.glove1573.cn:20881/eureka/
 
 sms:
   signName: 悦宠未来
