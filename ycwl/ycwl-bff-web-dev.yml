@@ -12,3 +12,9 @@ spring:
     url: jdbc:mysql://120.77.176.33:3306/alepet?useUnicode=true&characterEncoding=UTF-8
     username: root
     password: yuechongweilai
+
+feign:
+  hystrix:
+    enabled: true
+  httpclient:
+    connection-timeout: 5000
