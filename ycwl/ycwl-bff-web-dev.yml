@@ -6,8 +6,9 @@ eureka:
     service-url:
       defaultZone: http://www.glove1573.cn:20881/eureka/
 
-feign:
-  hystrix:
-    enabled: true
-  httpclient:
-    connection-timeout: 5000
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: false
