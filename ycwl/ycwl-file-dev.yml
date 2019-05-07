@@ -3,7 +3,8 @@ server:
 
 eureka:
   instance:
-    instanceId: www.glove1573.cn:${spring.application.name}:${server.port}
+    preferIpAddress: true
+    instanceId: ${spring.cloud.client.ipAddress}:${server.port}
   client:
     service-url:
       defaultZone: http://www.glove1573.cn:20881/eureka/
