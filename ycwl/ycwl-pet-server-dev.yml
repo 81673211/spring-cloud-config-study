@@ -5,6 +5,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://www.glove1573.cn:20881/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
 
 spring:
   datasource:
