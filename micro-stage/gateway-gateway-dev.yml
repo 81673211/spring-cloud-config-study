@@ -4,14 +4,16 @@ server:
 spring:
   cloud:
     gateway:
-      discovery:
-        locator:
-          enabled: true
-#      routes:
-#        - id: user-api
-#          uri: http://www.xujin.org:80/
-#          predicates:
-#            - Path=/xujin
+      routes:
+        - id: user-api
+          uri: lb://lb-service-user
+          predicates:
+            - Path=/user
+
+lb-service-user:
+  ribbon:
+    listOfServers: service-user1:9001, service-user2:9002, service-user3:9003
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
 
 logging:
   level:
