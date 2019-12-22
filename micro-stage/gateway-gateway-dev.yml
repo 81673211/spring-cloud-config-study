@@ -8,7 +8,7 @@ spring:
         - id: user-api
           uri: lb://lb-service-user
           predicates:
-            - Path=/user
+            - Path=/user/**
 
 lb-service-user:
   ribbon:
