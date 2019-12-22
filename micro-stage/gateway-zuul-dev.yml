@@ -5,7 +5,7 @@ zuul:
   routes:
     api-a:
       path: /user/**
-      serviceId: frontend
+      serviceId: service-user
     api-b:
       path: /news/**
       serviceId: non-exist
