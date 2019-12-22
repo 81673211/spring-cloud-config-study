@@ -1,9 +1,3 @@
-spring:
-  profiles:
-    active: dev
-  application:
-    name: service-user
-
 #server:
 #  port: 9001
 
